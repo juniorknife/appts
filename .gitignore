@@ -1,0 +1,6 @@
+node_modules/
+web/dist/
+gateway/target/
+*.log
+.DS_Store
+*.tsbuildinfo

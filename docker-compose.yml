@@ -1,0 +1,12 @@
+services:
+  ts-mobile:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    environment:
+      # Recomendado se o gateway ficar exposto na internet:
+      ACCESS_TOKEN: ""
+      # Restringe a quais servidores TS o gateway pode conectar (vazio = qualquer um).
+      # Ex.: "ts.meuclan.com,*.meuclan.gg"
+      ALLOWED_HOSTS: ""
